@@ -1,6 +1,6 @@
 <style>
 body {
-  background-image: repeating-linear-gradient(red, pink)
+  background-color: rgb(179, 220, 229);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
