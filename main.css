@@ -1,43 +1,51 @@
+<style>
 body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
+  background-image: linear-gradient(to bottom right,rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.4), rgba(255, 0, 0, 0.6), rgba(255, 0, 0, 0.4));
+  background-attachment: fixed;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  text-decoration: none;
+  border-style: inset; 
+  border-width: 10px ;
+  border-color: darkgrey;
+  margin-left: 50px;
+  margin-right: 50px;
+  height:50px;
+  font-size:50px;
 }
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
+a {
+  color: white;
+  margin-left:50px;
 }
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
+nav {
+font-size:20px;
 }
-
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+section{
+background-color: grey;
+height: 300px;
+margin-left: 80px;
+margin-right: 80px;
+text-align: center;
+box-shadow: 10px 10px 5px 5px rgba(64,64,64,0.5);
+margin-top: 50px;
+padding-top: 5px;
+border-style: outset;
+border-color: darkGrey;
+border-width: 10px;
 }
-
-ul.posts li {
-    list-style: none;
+header{
+margin-top: 0px;
+box-shadow: 10px 10px 5px 5px rgba(64,64,64,0.5);
+border-style: outset;
+border-color: darkGrey;
+border-width: 10px;
+background-color: grey;
+padding-bottom:20px;
 }
+#link{
+margin-top:-10px;
+}
+</style>
