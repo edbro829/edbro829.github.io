@@ -1,7 +1,6 @@
 <style>
 body {
-  background-image: url("paper.gif")
-  background-color: #cccccc;
+  background-image: repeating-linear-gradient(red, pink)
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
