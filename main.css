@@ -1,10 +1,6 @@
 <style>
 body {
   background-color: rgb(179, 220, 229);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
