@@ -48,4 +48,10 @@ padding-bottom:20px;
 #link{
 margin-top:-10px;
 }
+
+#navi{
+border-style: inset;
+border-color: darkGrey;
+border-width: 10px;
+}
 </style>
