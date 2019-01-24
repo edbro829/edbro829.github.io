@@ -7,14 +7,25 @@
   font-family: 'Open Sans', sans-serif;
   }
  
- a {
-  color: white;
-  margin-left:50px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   width: 200px;
+  background-color: #f1f1f1;
 }
- 
- #navi {
-width: 100px;  
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
 }
   
  </style>
@@ -30,11 +41,12 @@ width: 100px;
 <h1 > Calculators </h1>
 
 <nav id="headLinks">
-   <a id="navi" href="/index.html" id="link">Home</a>
-   <a id="navi" href="/mathconcepts.html" id="link">Math Concepts</a>
-   <a id="navi" href="/conversions.html" id="link">Conversions</a>
-   <a id="navi" href="/tipsandtax.html" id="link">Tips and Tax</a> 
-   <a id="navi" href="/other.html" id="link">Other</a> 
+ <ul>
+   <li><a  href="/index.html" >Home</a></li>
+   <li><a  href="/mathconcepts.html" >Math Concepts</a></li>
+   <li><a  href="/conversions.html" >Conversions</a></li>
+   <li><a  href="/tipsandtax.html" >Tips and Tax</a> </li>
+   <li><a  href="/other.html" >Other</a> </li>
 </nav>
 </header>
 </body>
