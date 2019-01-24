@@ -1,9 +1,13 @@
-length: <input id="length">
-width: <input id="width">
-Area: <input id="finalArea">
+length: <input id="length" type="number">
+width: <input id="width" type="number">
+Area: <input id="finalArea" type="number">
 <script>
   function area() {
-  var length = document.getElementById('length').value;
-  var width = document.getElementById('width').value;
-  var finalArea = length * width
+  var l = length.value
+  var w = width.value
+  var a = l * w
+  finalArea.value = a
 }
+
+ length.oninput = area
+ width.oninput = area
