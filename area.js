@@ -1,14 +1,15 @@
-length: <input id="length" type="number">
-width: <input id="width" type="number">
-Area: <input id="finalArea" type="number">
+<label for="length">length</label> <input id="length" type="number" value="0" min="0">
+<br>
+<label for="width">width</label> <input id="width" type="number" value="0" min="0">
+<br>
+<label for="finalArea">Area</label> <input id="finalArea" type="number" value=a>
 <script>
-  function area() {
+  function updateArea() {
   var l = length.value
   var w = width.value
   var a = l * w
   finalArea.value = a
 }
-<script>
- length.oninput = area
- width.oninput = area
-</script>
+ length.oninput = updateArea
+ width.oninput = updateArea
+ </script>
