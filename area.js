@@ -8,6 +8,7 @@ Area: <input id="finalArea" type="number">
   var a = l * w
   finalArea.value = a
 }
-
+<script>
  length.oninput = area
  width.oninput = area
+</script>
