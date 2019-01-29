@@ -1,0 +1,37 @@
+<!doctype html>
+<title>BMI Calculator</title>
+
+<style>
+body {
+  font-family: sans-serif;
+}
+
+label {
+  width: 170px;
+  display: inline-block;
+}
+
+input:invalid {
+  box-shadow: 0 0 4px red;
+}
+</style>
+
+<h1>BMI Calculator</h1>
+
+<p>Enter your weight and height to calculate your BMI.
+
+<p><label>Weight in pounds:</label> <input id="weightInput" type="number" value="150">
+<p><label>Height in inches:</label> <input id="heightInput" type="number" value="70">
+<p><label>Your BMI:</label> <input disabled id="bmiInput" type="number">
+
+<script>
+function updateBMI() {
+  var w = weightInput.value * 0.45;
+  var h = heightInput.value * 0.025;
+  var bmi = w / (h * h);
+  bmiInput.value = bmi.toFixed(1);
+}
+
+weightInput.oninput = updateBMI;
+heightInput.oninput = updateBMI;
+</script>
