@@ -1,15 +1,37 @@
-<label for="length">length</label> <input id="length" type="number" value="0" min="0">
-<br>
-<label for="width">width</label> <input id="width" type="number" value="0" min="0">
-<br>
-<label for="finalArea">Area</label> <input id="finalArea" type="number" value=a>
-<script>
-  function updateArea() {
-  var l = length.value
-  var w = width.value
-  var a = l * w
-  finalArea.value = a
+<!DOCTYPE html>
+<html>
+<title>BMI Calculator</title>
+
+<style>
+body {
+  font-family: sans-serif;
+  margin-left: 30%;
 }
- length.oninput = updateArea
- width.oninput = updateArea
- </script>
+label {
+  width: 170px;
+  display: inline-block;
+}
+input:invalid {
+  box-shadow: 0 0 4px red;
+}
+</style>
+
+<h1>BMI Calculator</h1>
+
+<p>Enter your weight and height to calculate your BMI.
+
+<p><label>length:</label> <input id="lengthInput" type="number" value="150">
+<p><label>Width</label> <input id="widthInput" type="number" value="70">
+<p><label>Area:</label> <input disabled id="areaInput" type="number">
+
+<script>
+function updateArea() {
+  var l = lenghtInput.value ;
+  var h = widthInput.value ;
+  var area = l * h;
+  areaInput.value = area.toFixed(1);
+}
+lengthInput.oninput = updateArea;
+widthInput.oninput = updateArea;
+</script>
+</html>
