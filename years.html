@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<title>years Calculator</title>
+
+<style>
+body {
+  font-family: sans-serif;
+  margin-left: 30%;
+}
+label {
+  width: 170px;
+  display: inline-block;
+}
+input:invalid {
+  box-shadow: 0 0 4px red;
+}
+</style>
+
+<h1>Dog and Cat years</h1>
+
+<p><label>Age in years:</label> <input id="ageInput" type="number" value="15">
+<p><label>Age in dog and cat years:</label> <input disabled id="animalInput" type="number">
+
+<script>
+function updateyear() {
+  var w = ageInput.value;
+  var ani = w * 7 ;
+  animalInput.value = ani.toFixed(1);
+}
+ageInput.oninput = updateyear;
+</script>
+</html>
