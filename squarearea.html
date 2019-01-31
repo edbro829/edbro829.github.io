@@ -20,13 +20,13 @@ input:invalid {
 
 <p>Enter the length and width of a square or rectangle to get the area.
 
-<p><label>length:</label> <input id="lengthInput" type="number" value="150" min="0">
-<p><label>Width</label> <input id="widthInput" type="number" value="70" min="0">
-<p><label>Area:</label> <input disabled id="areaInput" type="number">
+<p><label>length:</label> <input id="lengthInput" type="number" value="150" min="0"></p>
+<p><label>Width</label> <input id="widthInput" type="number" value="70" min="0"></p>
+<p><label>Area:</label> <input disabled id="areaInput" type="number"></p>
 
 <script>
 function updateArea() {
-  var l = lenghtInput.value ;
+  var l = lengthInput.value ;
   var h = widthInput.value ;
   var area = l * h;
   areaInput.value = area.toFixed(1);
@@ -34,4 +34,5 @@ function updateArea() {
 lengthInput.oninput = updateArea;
 widthInput.oninput = updateArea;
 </script>
+
 </html>
