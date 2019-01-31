@@ -22,7 +22,7 @@ input:invalid {
 
 <p><label>base 1 length:</label> <input id="lengthInput" type="number" value="150" min="0"></p>
 <p><label>base 2 length</label> <input id="widthInput" type="number" value="70" min="0"></p>
-<p><label>hieght</label> <input id="heightInput" type="number" value="70" min="0"></p>
+<p><label>height</label> <input id="heightInput" type="number" value="70" min="0"></p>
 <p><label>Area:</label> <input disabled id="areaInput" type="number"></p>
 
 <script>
@@ -30,7 +30,7 @@ function updateArea() {
   var l = lengthInput.value ;
   var h = widthInput.value ;
   var y = heightInput.value ;
-  var area = ((l * h) / 2) * y;
+  var area = ((l + h) / 2) * y;
   areaInput.value = area.toFixed(1);
 }
 lengthInput.oninput = updateArea;
