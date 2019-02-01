@@ -30,10 +30,8 @@ function updateArea() {
   var l = lengthInput.value ;
   var h = widthInput.value ;
   var y = heightInput.value ;
-  var av = h + l ;
-  var avg = av / 2 ;
-  var area = avg * y ;
-  areaInput.value = area.toFixed(4);
+  var area = ((l + h) / 2) *y;
+  areaInput.value = area.toFixed();
 }
 lengthInput.oninput = updateArea;
 widthInput.oninput = updateArea;
