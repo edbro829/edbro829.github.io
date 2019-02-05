@@ -17,7 +17,7 @@ input:invalid {
 }
 </style>
 
-<h1>Square and Rectangle Area</h1>
+<h1>Circle Area</h1>
 
 <p>Enter the length and width to get the area.
 
@@ -27,7 +27,7 @@ input:invalid {
 <script>
 function updateArea() {
   var l = lengthInput.value ;
-  var area = l * math.PI;
+  var area = l * l * 3.1415;
   areaInput.value = area.toFixed(4);
 }
 lengthInput.oninput = updateArea;
