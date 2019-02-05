@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>area Calculator</title>
+
+<style>
+body {
+  font-family: sans-serif;
+  margin-left: 30%;
+  padding-left: -100px;
+}
+label {
+  width: 170px;
+  display: inline-block;
+}
+input:invalid {
+  box-shadow: 0 0 4px red;
+}
+</style>
+
+<h1>Triangle Area</h1>
+
+<p>Enter the length and width of a square, rectangle, or parallelogram to get the area.
+
+<p><label>length:</label> <input id="lengthInput" type="number" value="150" min="0"></p>
+<p><label>Width</label> <input id="widthInput" type="number" value="70" min="0"></p>
+<p><label>Area:</label> <input disabled id="areaInput" type="number"></p>
+
+<script>
+function updateArea() {
+  var l = lengthInput.value ;
+  var h = widthInput.value ;
+  var area = l * h * 0.5;
+  areaInput.value = area.toFixed(4);
+}
+lengthInput.oninput = updateArea;
+widthInput.oninput = updateArea;
+</script>
+
+</html>
