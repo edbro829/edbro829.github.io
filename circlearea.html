@@ -27,8 +27,8 @@ function updateArea() {
   var l = lengthInput.value ;
   var area = l * l * 3.1415;
   var pi = l * l;
-  areaInput.value = area.toFixed(4);
-  piInput.value = pi.toFixed(4);
+  areaInput.value = area.toFixed(2);
+  piInput.value = pi.toFixed(2);
 }
 lengthInput.oninput = updateArea;
 </script>
