@@ -15,13 +15,22 @@ label {
 input:invalid {
   box-shadow: 0 0 4px red;
 }
+  
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+  
 </style>
 
 <h1>Kite</h1>
 <p><label>Diagonal 1:</label> <input id="lengthInput" type="number" value="150" min="0"></p>
 <p><label>Diagonal 2</label> <input id="widthInput" type="number" value="70" min="0"></p>
 <p><label>Area:</label> <input disabled id="areaInput" type="number"></p>
-<img src="https://media1.shmoop.com/images/geometry/geo_9_sec_1_graphik_30.png" alt="Rectangle picture" width="200px" >
+<img src="https://media1.shmoop.com/images/geometry/geo_9_sec_1_graphik_30.png" alt="Rectangle picture" width="200px" class="rotate90">
 <script>
 function updateArea() {
   var l = lengthInput.value ;
