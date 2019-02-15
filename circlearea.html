@@ -20,15 +20,17 @@ input:invalid {
 <h1>Circle</h1>
 <p><label> Radius:</label> <input id="lengthInput" type="number" value="150" min="0"></p>
 <p><label>Area:</label> <input disabled id="areaInput" type="number"></p>
+<p><label>Area in terms of pi:</label> <input disabled id="piInput" type="number"></p>
 
 <script>
 function updateArea() {
   var l = lengthInput.value ;
   var area = l * l * 3.1415;
+  var pi = l * l;
   areaInput.value = area.toFixed(4);
+  piInput.value = pi.toFixed(4);
 }
 lengthInput.oninput = updateArea;
-widthInput.oninput = updateArea;
 </script>
 
 </html>
