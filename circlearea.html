@@ -22,14 +22,20 @@ input:invalid {
 <p><label> Radius:</label> <input id="lengthInput" type="number" value="150" min="0"></p>
 <p><label>Exact area:</label> <input disabled id="areaInput" type="number"></p>
 <p><label>Area in terms of pi:</label> <input width="50px" disabled id="piInput" type="number">π</p>
+<p><label>Exact Circumference:</label> <input width="50px" disabled id="circInput" type="number"></p>
+<p><label>Circumference in terms of pi:</label> <input width="50px" disabled id="circleInput" type="number">π</p>
 <img src="http://www.platinumgmat.com/global/images/study_guide/circles1.gif?v=1" alt="Rectangle picture" width="200px" >
 <script>
 function updateArea() {
   var l = lengthInput.value ;
   var area = l * l * 3.1415;
   var pi = l * l;
+  var c = 2 * l *3.1415;
+  var cpi = 2 * l;
   areaInput.value = area.toFixed(2);
   piInput.value = pi.toFixed(2);
+  circInput.value = c;
+  cirlceInput.value = cpi;
 }
 lengthInput.oninput = updateArea;
 </script>
