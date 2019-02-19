@@ -21,12 +21,11 @@ input:invalid {
 <p><label>Cost:</label> <input id="lengthInput" type="number" value="150" min="0"></p>
 <p><label>Tip percent:</label> <input id="widthInput" type="number" value="20" min="0"></p>
 <p><label>Total payment:</label> <input disabled id="areaInput" type="number"></p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Rectangle_Geometry_Vector.svg/1200px-Rectangle_Geometry_Vector.svg.png" alt="Rectangle picture" width="150px" >
 <script>
 function updateArea() {
   var l = lengthInput.value ;
   var h = widthInput.value ;
-  var area = (l * h) + l;
+  var area = l + l * h;
   areaInput.value = area.toFixed(4);
 }
 lengthInput.oninput = updateArea;
