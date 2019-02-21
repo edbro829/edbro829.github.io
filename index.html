@@ -58,10 +58,11 @@ color: white;
   
   input[type=text],
 textarea{
-  background-color: #aabbbb;
+  background-color: rgb(100, 200, 300);
   color: white;
   outline: none;
-  border-radius: 5px;
+  border: none;
+  border-bottom: 3px solid grey;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -76,8 +77,18 @@ input[type=button], input[type=submit], input[type=reset] {
 }
   
 section{
+
  width:500px;
   }
+  
+#butt {
+margin-left: 100px;
+width: 200px;
+}
+
+#x {
+margin-left:37px;
+}
  </style>
 <body>
 <nav id="headLinks">
@@ -103,13 +114,13 @@ section{
 Send a suggestion for new calculators here!<br><br><br>
 Enter your name and comment. Then, press Submit. This will open up gmail. If you are not logged into a gmail account, log in to one. DO NOT EDIT THE EMAIL, just send it.<br><br><br>
 Your Name:
-<input type="text" size="20" name="VisitorName"><br><br>
+<input id="x" type="text" size="20" name="VisitorName"><br><br>
 
-Your Comment:<br>
-<textarea name="VisitorComment" rows="4" cols="20">
+Your Suggestion:
+<textarea name="VisitorComment" size="40">
 </textarea><br><br>
 
-<input type="submit" value="Submit" margin-left="200px">
+<input id="butt" type="submit" value="Submit" margin-left="200px">
 
 </form>
  </section>
