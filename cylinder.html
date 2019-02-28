@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<title>area Calculator</title>
+
+<style>
+body {
+  font-family: sans-serif;
+  margin-left: 30%;
+  padding-left: -100px;
+}
+label {
+  width: 170px;
+}
+input:invalid {
+  box-shadow: 0 0 4px red;
+  width: 200px;
+}
+</style>
+<p><label> Radius:</label> <input id="lengthInput" type="number" value="150" min="0"></p>
+<p><label> Height:</label> <input id="heightInput" type="number" value="150" min="0"></p>
+<p><label>Exact area:</label> <input disabled id="areaInput" type="number"></p>
+<p><label>Area in terms of pi:</label> <input width="50px" disabled id="piInput" type="number">π</p>
+<img src="http://www.platinumgmat.com/global/images/study_guide/circles1.gif?v=1" alt="Rectangle picture" width="200px" >
+<script>
+function updateArea() {
+  var l = lengthInput.value ;
+  var h = heightInput.value;
+  var area = l * l * h * 3.1415;
+  var pi = l * l * h;
+  areaInput.value = area;
+  piInput.value = pi;
+}
+lengthInput.oninput = updateArea;
+</script>
+
+</html>
