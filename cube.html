@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html>
+<title>area Calculator</title>
+
+<style>
+body {
+  font-family: sans-serif;
+  margin-left: 30%;
+  padding-left: -100px;
+}
+label {
+  width: 170px;
+  display: inline-block;
+}
+input:invalid {
+  box-shadow: 0 0 4px red;
+}
+</style>
+
+<h1>Cube</h1>
+<p><label>Side Length:</label> <input id="lengthInput" type="number" value="150" min="0"></p>
+<p><label>Volume:</label> <input disabled id="areaInput" type="number"></p>
+<img src="http://exchangedownloads.smarttech.com/public/content/d0/d0d3a8f1-734c-4b00-98bd-15d4b574fb2d/previews/medium/0001.png" alt="Rectangle picture" width="150px" >
+<script>
+function updateArea() {
+  var l = lengthInput.value ;
+  var area = l * l * l;
+  areaInput.value = area.toFixed(4);
+}
+lengthInput.oninput = updateArea;
+</script>
+
+</html>
 
