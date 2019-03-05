@@ -20,13 +20,14 @@ input:invalid {
 <h1>Tips</h1>
 <p><label>Cost:</label> <input id="lengthInput" type="number" value="150" min="0"></p>
 <p><label>Tip percent:</label> <input id="widthInput" type="number" value="20" min="0"></p>
-<p><label>Total payment:</label> <input disabled id="areaInput" type="number"></p>
+<p><label>Total Tip:</label> <input disabled id="areaInput" type="number"></p>
 <script>
 function updateArea() {
   var l = lengthInput.value ;
   var h = widthInput.value ;
-  var area = l + l * h;
-  areaInput.value = area.toFixed(4);
+  var a = l * h / 100 ;
+  var total= a;
+  areaInput.value = total.toFixed(4);
 }
 lengthInput.oninput = updateArea;
 widthInput.oninput = updateArea;
